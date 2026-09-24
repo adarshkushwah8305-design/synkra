@@ -1,0 +1,315 @@
+/* =========================================
+   DEVELOPER SDK SECTION
+========================================= */
+
+.developer-sdk-section {
+  width: 1280px;
+  height: 711px;
+
+  padding: 64px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #f7f9fa;
+
+  border-radius: 32px;
+}
+
+
+/* =========================================
+   MAIN DARK CONTAINER
+========================================= */
+
+.developer-sdk-container {
+  width: 1152px;
+  height: 583px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 0;
+
+  background: #0e0f11;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.developer-sdk-content {
+  width: 576px;
+  height: 583px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 64px 32px;
+
+  gap: 24px;
+
+  box-sizing: border-box;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.developer-sdk-badge {
+  width: 171px;
+  height: 29px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 4px 12px;
+
+  gap: 4px;
+
+  box-sizing: border-box;
+
+  background: #e4e3df;
+
+  border-radius: 999px;
+
+  color: #131210;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 175%;
+
+  white-space: nowrap;
+}
+
+.badge-icon {
+  font-size: 12px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.developer-sdk-heading {
+  width: 512px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+.developer-sdk-heading h2 {
+  width: 512px;
+
+  margin: 0;
+
+  font-family: "Newsreader", Georgia, serif;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  line-height: 120%;
+
+  color: #fcfcfd;
+}
+
+
+.developer-sdk-heading p {
+  width: 512px;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #fcfcfd;
+}
+
+
+.developer-sdk-heading strong {
+  font-style: italic;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FEATURE LIST
+========================================= */
+
+.developer-sdk-list {
+  width: 512px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 8px 0;
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FEATURE ITEM
+========================================= */
+
+.developer-sdk-item {
+  width: 512px;
+
+  min-height: 25px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 12px;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #fcfcfd;
+}
+
+
+/* =========================================
+   ORANGE CHECK CIRCLE
+========================================= */
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+
+  min-width: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #f4a016;
+
+  border-radius: 50%;
+
+  color: #f4a016;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.developer-sdk-button {
+  width: 283px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 20px;
+
+  gap: 8px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e4e3df;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #fcfcfd;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 150%;
+
+  cursor: pointer;
+}
+
+.developer-sdk-button:hover {
+  background: #1a1b1e;
+}
+
+.button-icon {
+  font-size: 20px;
+  color: #fcfcfd;
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.developer-sdk-image {
+  width: 576px;
+  height: 583px;
+
+  flex: 0 0 576px;
+
+  overflow: hidden;
+
+  background: #0e0f11;
+}
+
+
+.developer-sdk-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: right center;
+}

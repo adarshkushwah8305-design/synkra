@@ -1,0 +1,343 @@
+.more-synkra {
+  width: 100%;
+  
+  height: 781px;
+
+  box-sizing: border-box;
+
+  padding: 64px;
+
+  margin: 0 auto;
+
+  background: #f7f9fa;
+
+  font-family: "DM Sans", sans-serif;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.more-synkra-header {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+}
+
+
+.more-synkra-header h2 {
+  margin: 0;
+
+  font-family: "Newsreader", serif;
+
+  font-size: 32px;
+  font-weight: 500;
+
+  line-height: 130%;
+
+  color: #131210;
+}
+
+
+.more-synkra-header p {
+  margin: 8px 0 0;
+
+  font-size: 13px;
+  line-height: 150%;
+
+  color: #514f4a;
+}
+
+
+/* =========================
+   ARROWS
+========================= */
+
+.more-synkra-arrows {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding-top: 8px;
+}
+
+
+.more-synkra-arrows button {
+  width: 28px;
+  height: 28px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #514f4a;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   HORIZONTAL SCROLL
+========================= */
+
+.more-synkra-track {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.more-synkra-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Chrome / Edge scrollbar */
+
+.more-synkra-track::-webkit-scrollbar {
+  height: 8px;
+}
+
+
+.more-synkra-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.more-synkra-track::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+
+  border-radius: 10px;
+}
+
+
+.more-synkra-track::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.more-synkra-card {
+  width: 360px;
+  min-width: 360px;
+
+  height: 500px;
+
+  box-sizing: border-box;
+
+  flex-shrink: 0;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fcfcfd;
+
+  border: 1px solid #e4e3df;
+
+  border-radius: 8px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.more-synkra-image {
+  width: 100%;
+
+  height: 180px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  margin-bottom: 14px;
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+.more-synkra-category {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  line-height: 150%;
+
+  color: #1a56db;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.more-synkra-card h3 {
+  margin: 0;
+
+  font-family: "Newsreader", serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  line-height: 125%;
+
+  color: #131210;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.more-synkra-description {
+  margin: 14px 0 0;
+
+  font-size: 12px;
+
+  line-height: 165%;
+
+  color: #78766f;
+
+  flex: 1;
+}
+
+
+/* =========================
+   AUTHOR
+========================= */
+
+.more-synkra-author {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+
+.more-synkra-avatar {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #edf3ff;
+
+  color: #1a56db;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+.more-synkra-author-info {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.more-synkra-author-info strong {
+  font-size: 10px;
+
+  font-weight: 600;
+
+  line-height: 150%;
+
+  color: #131210;
+}
+
+
+.more-synkra-author-info span {
+  margin-top: 2px;
+
+  font-size: 8px;
+
+  line-height: 150%;
+
+  color: #78766f;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .more-synkra {
+    height: auto;
+
+    padding: 48px 32px;
+  }
+
+  .more-synkra-track {
+    overflow-x: auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .more-synkra {
+    padding: 40px 20px;
+  }
+
+  .more-synkra-header h2 {
+    font-size: 28px;
+  }
+
+  .more-synkra-card {
+    width: 300px;
+    min-width: 300px;
+
+    height: 470px;
+  }
+
+  .more-synkra-image {
+    height: 160px;
+  }
+
+}

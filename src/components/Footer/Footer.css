@@ -1,0 +1,354 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100%;
+  height: 194px;
+
+  padding-bottom: 16px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #fcfcfd;
+}
+
+
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+.footer-top {
+  width: 100%;
+  max-width: 1280px;
+
+  height: 77px;
+
+  box-sizing: border-box;
+
+  padding: 24px 64px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #e4e3df;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.footer-nav {
+  width: 100%;
+
+  height: 28px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+}
+
+
+.footer-nav a {
+  padding: 0 4px;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #78766f;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+
+.footer-nav a:hover {
+  color: #131210;
+}
+
+
+/* =========================
+   BOTTOM SECTION
+========================= */
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1280px;
+
+  height: 101px;
+
+  box-sizing: border-box;
+
+  padding: 16px 64px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.footer-logo {
+  width: 138px;
+  height: 48px;
+
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 2px;
+
+  border-radius: 18px;
+}
+
+
+/* Logo mark */
+
+.footer-logo-mark {
+  position: relative;
+
+  width: 24px;
+  height: 28px;
+
+  flex-shrink: 0;
+}
+
+
+/* Blue part */
+
+.footer-logo-mark span:first-child {
+  position: absolute;
+
+  width: 7px;
+  height: 22px;
+
+  left: 7px;
+  top: 3px;
+
+  background: #1685c4;
+
+  transform: skew(-25deg) rotate(45deg);
+}
+
+
+/* Green part */
+
+.footer-logo-mark span:last-child {
+  position: absolute;
+
+  width: 7px;
+  height: 17px;
+
+  left: 4px;
+  top: 8px;
+
+  background: #20a879;
+
+  transform: skew(-25deg) rotate(-45deg);
+}
+
+
+/* Logo text */
+
+.footer-logo-text {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #131210;
+
+  letter-spacing: -1.2px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.footer-right {
+  width: 208px;
+  height: 69px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons {
+  width: 208px;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+}
+
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+
+  padding: 8px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background: #e4e3df;
+
+  color: #131210;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+
+.social-icons a:hover {
+  background: #d8d7d2;
+
+  transform: translateY(-2px);
+}
+
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-right p {
+  width: 106px;
+  height: 21px;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #78766f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .footer {
+    height: auto;
+  }
+
+  .footer-top {
+    height: auto;
+
+    padding: 24px 30px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px 30px;
+  }
+
+  .footer-bottom {
+    padding: 16px 30px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .footer-top {
+    padding: 25px 20px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+
+    height: auto;
+
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    height: auto;
+
+    padding: 25px 20px;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+
+}

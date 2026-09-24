@@ -1,0 +1,313 @@
+/* ========================= */
+/* VALUES SECTION */
+/* ========================= */
+
+.values-section {
+  width: 100%;
+  height: 571px;
+
+  padding: 64px;
+
+  box-sizing: border-box;
+
+  border-radius: 32px;
+
+  background: #f8fafb;
+}
+
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.values-container {
+  width: 100%;
+  max-width: 1152px;
+
+  height: 443px;
+
+  margin: 0 auto;
+
+  padding: 16px 0;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 48px;
+}
+
+
+/* ========================= */
+/* HEADING */
+/* ========================= */
+
+.values-heading {
+  width: 100%;
+  height: 83px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+.values-heading h2 {
+  width: 560px;
+  height: 47px;
+
+  margin: 0;
+
+  font-family: "Newsreader", Georgia, serif;
+
+  font-size: 36px;
+  font-weight: 500;
+
+  line-height: 130%;
+
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.values-heading p {
+  width: 333px;
+  height: 28px;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #514f4a;
+
+  text-align: center;
+}
+
+
+/* ========================= */
+/* CARDS GRID */
+/* ========================= */
+
+.values-grid {
+  width: 100%;
+  height: 280px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.value-card {
+  width: 100%;
+  height: 280px;
+
+  padding: 32px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 24px;
+
+  border-radius: 12px;
+
+  border: 1px solid #e4e3df;
+}
+
+
+/* Light cards */
+
+.value-card-light {
+  background: #fcfcfd;
+}
+
+
+/* Blue card */
+
+.value-card-blue {
+  background: #1a56db;
+
+  border-color: #e4e3df;
+}
+
+
+/* ========================= */
+/* ICON */
+/* ========================= */
+
+.value-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* First icon */
+
+.value-icon-gray {
+  background: #e4e3df;
+  color: #131210;
+}
+
+
+/* Middle icon */
+
+.value-icon-white {
+  background: #ebf2fd;
+  color: #1a56db;
+}
+
+
+/* Third icon */
+
+.value-icon-green {
+  background: #edfaf3;
+  color: #1b6f4a;
+}
+
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.value-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 11.25px;
+}
+
+
+.value-content h3 {
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 150%;
+
+  color: #131210;
+}
+
+
+.value-card-blue .value-content h3 {
+  color: #fcfcfd;
+}
+
+
+.value-content p {
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #514f4a;
+}
+
+
+.value-card-blue .value-content p {
+  color: #fcfcfd;
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+  .values-section {
+    height: auto;
+
+    padding: 48px 24px;
+  }
+
+  .values-container {
+    height: auto;
+  }
+
+  .values-grid {
+    height: auto;
+
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    height: 280px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .values-section {
+    padding: 40px 20px;
+
+    border-radius: 20px;
+  }
+
+  .values-heading h2 {
+    width: 100%;
+
+    font-size: 30px;
+  }
+
+  .values-heading p {
+    width: 100%;
+
+    font-size: 14px;
+  }
+
+}

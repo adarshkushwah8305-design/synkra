@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@source "./**/*.{js,jsx,ts,tsx}";
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,575 @@
+/* =========================================
+   CHANGELOG MAIN SECTION
+========================================= */
+
+.changelog {
+  width: 1280px;
+  height: 1765px;
+
+  padding: 64px;
+  box-sizing: border-box;
+
+  background: #f7f9fa;
+  color: #131210;
+
+  font-family: "DM Sans", sans-serif;
+
+  margin: 0 auto;
+}
+
+.changelog-container {
+  width: 100px;
+ max-width: 1280px;
+
+  height: 1637px;
+
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.changelog-header {
+  width: 1152px;
+  height: 225px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 40px;
+}
+
+
+.changelog-heading {
+  width: 712px;
+  height: 225px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+
+/* BADGE */
+
+.changelog-badge {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+  height: 29px;
+
+  padding: 4px 12px;
+  box-sizing: border-box;
+
+  background: #ebf2fd;
+  border-radius: 999px;
+
+  color: #1a56db;
+
+  font-size: 12px;
+  line-height: 175%;
+}
+
+
+/* MAIN TITLE */
+
+.changelog-heading h1 {
+  width: 712px;
+  height: 176px;
+
+  margin: 0;
+
+  font-family: "Newsreader", serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 110%;
+
+  letter-spacing: -0.02em;
+
+  color: #131210;
+}
+
+
+/* BLUE LINE */
+
+.changelog-blue-line {
+  width: 128px;
+  height: 4px;
+
+  background: #1a56db;
+}
+
+
+/* DESCRIPTION */
+
+.changelog-description {
+  width: 400px;
+  height: 112px;
+
+  display: flex;
+  align-items: center;
+
+  color: #514f4a;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.changelog-timeline {
+  position: relative;
+
+  width: 1152px;
+  height: 1396px;
+
+  padding: 64px 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px;
+}
+
+
+/* CENTER DASHED LINE */
+
+.timeline-line {
+  position: absolute;
+
+  width: 1px;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  border-left: 2px dashed #d1e0fa;
+
+  transform: translateX(-50%);
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   TIMELINE ITEM
+========================================= */
+
+.changelog-item {
+  position: relative;
+
+  width: 1152px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 20px;
+
+  z-index: 1;
+}
+
+
+/* ITEM HEIGHTS */
+
+.left-item:nth-of-type(2) {
+  height: 360px;
+}
+
+.right-item:nth-of-type(3) {
+  height: 229px;
+}
+
+.left-item:nth-of-type(4) {
+  height: 290px;
+}
+
+.right-item:nth-of-type(5) {
+  height: 245px;
+}
+
+
+/* =========================================
+   LEFT / RIGHT CONTENT
+========================================= */
+
+.timeline-content {
+  width: 548px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+.timeline-left {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.timeline-right {
+  align-items: flex-start;
+  text-align: left;
+}
+
+
+/* =========================================
+   VERSION BADGE
+========================================= */
+
+.version-badge {
+  display: inline-flex;
+  align-items: center;
+
+  height: 29px;
+
+  padding: 4px 12px;
+  box-sizing: border-box;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  line-height: 175%;
+}
+
+
+.version-badge.green {
+  background: #0f766e;
+  color: #ccfbf1;
+}
+
+
+.version-badge.grey {
+  background: #e4e3df;
+  color: #131210;
+}
+
+
+/* =========================================
+   TIMELINE TITLES
+========================================= */
+
+.timeline-content h2 {
+  margin: 8px 0 0;
+
+  font-family: "Newsreader", serif;
+
+  font-size: 36px;
+  font-weight: 500;
+  font-style: italic;
+
+  line-height: 130%;
+  letter-spacing: -0.03em;
+
+  color: #131210;
+}
+
+
+.timeline-left h2 {
+  text-align: right;
+}
+
+
+.timeline-right h2 {
+  text-align: left;
+}
+
+
+.release-date {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 175%;
+
+  color: #78766f;
+}
+
+
+/* =========================================
+   TIMELINE DOT
+========================================= */
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+
+  min-width: 16px;
+
+  margin-top: 8px;
+
+  background: #1a56db;
+
+  border-radius: 9999px;
+
+  box-shadow: 0 0 0 4px #dbe1ff;
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.timeline-card {
+  width: 548px;
+
+  box-sizing: border-box;
+
+  padding: 32px;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+
+
+/* WHITE CARD */
+
+.white-card {
+  height: 360px;
+
+  background:
+    radial-gradient(
+      111.29% 100.72% at 50% 50%,
+      #fafafb 0%,
+      #ffffff 100%
+    );
+
+  border: 1px solid #e4e3df;
+}
+
+
+/* GREY CARD */
+
+.grey-card {
+  background: #e4e3df;
+
+  border: 1px solid #e4e3df;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.card-heading {
+  font-size: 14px;
+  line-height: 175%;
+  font-weight: 400;
+}
+
+
+.card-heading.blue {
+  color: #1a56db;
+}
+
+
+.card-heading.green-text {
+  color: #1b6f4a;
+}
+
+
+.card-heading.red-text {
+  color: #be1c1c;
+}
+
+
+.card-description {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 175%;
+
+  color: #514f4a;
+}
+
+
+/* =========================================
+   FEATURE ROW
+========================================= */
+
+.feature-row {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+.feature-row > span {
+  width: 24px;
+  min-width: 24px;
+
+  color: #1a56db;
+
+  font-size: 15px;
+  line-height: 24px;
+}
+
+
+.feature-row p {
+  margin: 0;
+
+  flex: 1;
+
+  font-size: 16px;
+  line-height: 175%;
+
+  color: #514f4a;
+}
+
+
+.red-icon {
+  color: #be1c1c !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1300px) {
+
+  .changelog {
+    width: 100%;
+    height: auto;
+  }
+
+  .changelog-container,
+  .changelog-header,
+  .changelog-timeline,
+  .changelog-item {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .changelog {
+    padding: 40px 24px;
+  }
+
+  .changelog-header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .changelog-heading {
+    width: 100%;
+    height: auto;
+  }
+
+  .changelog-heading h1 {
+    width: 100%;
+    height: auto;
+    font-size: 60px;
+  }
+
+  .changelog-description {
+    width: 100%;
+    height: auto;
+  }
+
+  .changelog-timeline {
+    height: auto;
+    align-items: stretch;
+    padding: 40px 0;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .changelog-item {
+    width: 100%;
+    height: auto !important;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 50px;
+
+    gap: 16px;
+  }
+
+  .timeline-content,
+  .timeline-card {
+    width: 100%;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .timeline-left h2,
+  .timeline-right h2 {
+    text-align: left;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .changelog {
+    padding: 32px 16px;
+  }
+
+  .changelog-heading h1 {
+    font-size: 48px;
+  }
+
+  .changelog-description {
+    font-size: 14px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
+
+  .timeline-content h2 {
+    font-size: 30px;
+  }
+
+  .feature-row p,
+  .card-description {
+    font-size: 14px;
+  }
+
+}

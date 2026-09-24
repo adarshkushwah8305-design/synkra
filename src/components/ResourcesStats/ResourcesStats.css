@@ -1,0 +1,324 @@
+
+/* =========================================
+   RESOURCES STATS
+   Figma: The Blueprint of Precision
+   ========================================= */
+
+.resources-stats-section {
+  width: 100%;
+  height: 374px;
+
+  padding: 40px 64px;
+  box-sizing: border-box;
+
+  background: #f2f1ef;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.resources-stats-container {
+  width: 1152px;
+  max-width: 100%;
+
+  height: 294px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 64px;
+}
+
+
+/* =========================================
+   TOP CONTAINER
+   ========================================= */
+
+.resources-stats-top {
+  width: 100%;
+  height: 106px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* =========================================
+   LEFT TITLE
+   ========================================= */
+
+.resources-stats-title-box {
+  width: 512px;
+  max-width: 512px;
+
+  height: 106px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  flex: 1;
+}
+
+
+.resources-stats-title-box h2 {
+  width: 512px;
+  height: 94px;
+
+  margin: 0;
+
+  font-family: "Newsreader", Georgia, serif;
+
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 36px;
+  line-height: 130%;
+
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+
+  font-feature-settings: "liga" off;
+}
+
+
+/* BLUE LINE */
+
+.resources-stats-blue-line {
+  width: 128px;
+  height: 4px;
+
+  background: #1a56db;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   RIGHT SUB CONTENT
+   ========================================= */
+
+.resources-stats-sub-box {
+  width: 580px;
+  height: 97px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  flex: 1;
+}
+
+
+/* =========================================
+   BADGE
+   ========================================= */
+
+.resources-stats-badge {
+  width: 107px;
+  height: 29px;
+
+  padding: 4px 12px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 4px;
+
+  background: #ebf2fd;
+
+  border-radius: 999px;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 12px;
+  line-height: 175%;
+
+  color: #1a56db;
+}
+
+
+.resources-stats-badge-icon {
+  width: 14px;
+  height: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #1a56db;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.resources-stats-sub-box p {
+  width: 580px;
+  height: 56px;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 16px;
+  line-height: 175%;
+
+  color: #514f4a;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.resources-stats-sub-box strong {
+  font-weight: 700;
+  font-style: italic;
+
+  margin: 0 3px;
+}
+
+
+/* =========================================
+   STATS GRID
+   ========================================= */
+
+.resources-stats-grid {
+  width: 100%;
+  height: 124px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+
+  border-radius: 16px;
+}
+
+
+/* =========================================
+   EACH STAT
+   ========================================= */
+
+.resources-stat-item {
+  width: 258px;
+  height: 124px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+}
+
+
+/* =========================================
+   NUMBER
+   ========================================= */
+
+.resources-stat-number {
+  height: 48px;
+
+  font-family: "Newsreader", Georgia, serif;
+
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 40px;
+  line-height: 120%;
+
+  color: #1a56db;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-feature-settings: "liga" off;
+
+  white-space: nowrap;
+}
+
+
+/* PLUS */
+
+.resources-stat-number span {
+  font-size: 24px;
+
+  margin-left: 2px;
+
+  align-self: flex-start;
+
+  margin-top: 3px;
+}
+
+
+/* =========================================
+   LABEL
+   ========================================= */
+
+.resources-stat-label {
+  min-height: 28px;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 16px;
+  line-height: 175%;
+
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  white-space: nowrap;
+}

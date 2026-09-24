@@ -1,0 +1,435 @@
+.testimonials-section {
+  width: 100%;
+  min-height: 1256px;
+  padding: 64px;
+  box-sizing: border-box;
+
+  background: #F5F7F9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+}
+
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.testimonials-header {
+  width: 100%;
+  max-width: 1152px;
+  min-height: 125px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* LEFT TITLE */
+
+.testimonials-title {
+  width: 512px;
+  max-width: 512px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+.testimonials-title h2 {
+  width: 512px;
+  margin: 0;
+
+  font-family: "Newsreader", Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+
+  color: #131210;
+}
+
+.blue-line {
+  width: 128px;
+  height: 4px;
+
+  background: #1A56DB;
+}
+
+
+/* RIGHT DESCRIPTION */
+
+.testimonials-description {
+  width: 628px;
+  height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+.love-badge {
+  height: 29px;
+
+  padding: 4px 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  background: #EBF2FD;
+  border-radius: 999px;
+
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #1A56DB;
+}
+
+.testimonials-description p {
+  width: 628px;
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+
+  color: #514F4A;
+}
+
+
+/* =========================
+   TESTIMONIAL CARDS
+========================= */
+
+.testimonial-row {
+  width: 100%;
+  max-width: 1152px;
+  height: 364px;
+
+  padding: 32px 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 32px;
+}
+
+
+.testimonial-card {
+  box-sizing: border-box;
+
+  width: 362.67px;
+  min-height: 297.25px;
+
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  background: #FCFCFD;
+
+  border: 1px solid #E4E3DF;
+  border-radius: 12px;
+}
+
+
+/* TEXT */
+
+.testimonial-text {
+  width: 100%;
+  height: 168px;
+
+  margin: 0;
+
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-card:nth-child(2) .testimonial-text,
+.bottom-row .testimonial-text {
+  font-style: italic;
+}
+
+
+/* AUTHOR */
+
+.testimonial-author {
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #DCE8FF;
+  border: 1px solid #1A56DB;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #1A56DB;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0;
+}
+
+.author-info strong {
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+
+  color: #131210;
+}
+
+.author-info span {
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 175%;
+
+  color: #78766F;
+}
+
+
+/* =========================
+   BIG QUOTE
+========================= */
+
+.big-quote-section {
+  width: 100%;
+  max-width: 1152px;
+  height: 203px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px;
+}
+
+
+.big-quote {
+  width: 864px;
+  height: 188px;
+
+  font-family: "Newsreader", Georgia, serif;
+
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 130%;
+
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+
+  text-align: justify;
+}
+
+
+/* QUOTE AUTHOR */
+
+.quote-author {
+  width: 240px;
+  height: 203px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+.quote-avatar {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  border: 2px solid #1A56DB;
+
+  background: #DCE8FF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #1A56DB;
+}
+
+.quote-author strong {
+  font-family: "Newsreader", Georgia, serif;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+
+  color: #131210;
+}
+
+.quote-author > span {
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 175%;
+
+  color: #78766F;
+}
+
+
+.quote-button {
+  width: 56px;
+  height: 40px;
+
+  border-radius: 999px;
+
+  background: #1A56DB;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .testimonials-section {
+    padding: 40px 30px;
+  }
+
+  .testimonials-header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: auto;
+  }
+
+  .testimonials-title,
+  .testimonials-title h2,
+  .testimonials-description,
+  .testimonials-description p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimonial-row {
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px 0;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .big-quote-section {
+    height: auto;
+
+    flex-direction: column;
+  }
+
+  .big-quote {
+    width: 100%;
+    height: auto;
+
+    font-size: 30px;
+  }
+
+  .quote-author {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .testimonials-section {
+    padding: 32px 20px;
+  }
+
+  .testimonials-title h2 {
+    font-size: 28px;
+  }
+
+  .testimonials-description p {
+    font-size: 14px;
+  }
+
+  .testimonial-row {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    min-height: auto;
+  }
+
+  .big-quote {
+    font-size: 26px;
+  }
+}

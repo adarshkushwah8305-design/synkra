@@ -1,0 +1,507 @@
+/* ==============================
+   FEATURES SECTION
+============================== */
+
+.features-section {
+    width: 100%;
+
+
+    padding: 64px 55px;
+
+    box-sizing: border-box;
+  background: #f7f9fa;
+
+    color: #111;
+}
+
+
+/* ==============================
+   TOP INTRO
+============================== */
+
+.features-intro {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 48px;
+}
+
+
+.features-intro-left {
+    width: 50%;
+}
+
+
+.features-intro-left h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+
+    font-weight: 400;
+
+    color: #111;
+
+    margin: 0 0 12px;
+}
+
+
+.blue-line {
+    width: 110px;
+
+    height: 5px;
+
+    background: #2161df;
+}
+
+
+.features-intro-right {
+    width: 50%;
+
+    padding-left: 35px;
+
+    box-sizing: border-box;
+}
+
+
+.difference-pill {
+    display: inline-block;
+
+    background: #edf4ff;
+
+    color: #2161df;
+
+    font-size: 11px;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.features-intro-right p {
+    max-width: 530px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* ==============================
+   COMMON PILL
+============================== */
+
+.feature-pill {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 9px 13px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+
+.blue-pill {
+    background: #edf4ff;
+    color: #2161df;
+}
+
+
+.green-pill {
+    background: #e9f8f0;
+    color: #23805b;
+}
+
+
+.dark-green-pill {
+    background: #12867e;
+    color: white;
+}
+
+
+.white-pill {
+    background: white;
+    color: #b46d00;
+}
+
+
+.light-green-pill {
+    background: #eaf8f2;
+    color: #247c5c;
+}
+
+
+.light-red-pill {
+    background: #fff0f0;
+    color: #e25353;
+}
+
+
+/* ==============================
+   ROW ONE
+============================== */
+
+.features-row-one {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 24px;
+
+    margin-bottom: 24px;
+}
+
+
+/* ANALYTICS */
+
+.analytics-card {
+    background: #fdfdfd;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+
+    padding: 28px;
+
+    min-height: 382px;
+
+    box-sizing: border-box;
+}
+
+
+.analytics-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: 400;
+
+    margin: 0 0 12px;
+}
+
+
+.analytics-card p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #666;
+
+    margin: 0 0 20px;
+}
+
+
+.analytics-card img {
+    width: 100%;
+
+    height: 168px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+/* ==============================
+   RECOVERY
+============================== */
+
+.recovery-card {
+    background: #2459d9;
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+    min-height: 382px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+.recovery-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    margin: 5px 0 15px;
+}
+
+
+.recovery-card p {
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    margin: 0;
+
+    max-width: 280px;
+}
+
+
+.recovery-number {
+    position: absolute;
+
+    left: 22px;
+
+    bottom: -18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 82px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    color: rgba(255, 255, 255, 0.18);
+}
+
+
+/* ==============================
+   ROW TWO
+============================== */
+
+.intelligence-card {
+    width: 100%;
+box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.08);
+
+    min-height: 300px;
+
+    background: #fdfdfd;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    margin-bottom: 24px;
+}
+
+
+.intelligence-content {
+    width: 55%;
+
+    padding: 38px 28px;
+
+    box-sizing: border-box;
+}
+
+
+.intelligence-content h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    margin: 0 0 15px;
+}
+
+
+.intelligence-content p {
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    color: #666;
+
+    max-width: 570px;
+
+    margin: 0;
+}
+
+
+.intelligence-image {
+    width: 45%;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+}
+
+
+.intelligence-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+.check-list {
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    color: #444;
+}
+
+
+.check-list span::first-letter {
+    color: #2161df;
+}
+
+
+/* ==============================
+   ROW THREE
+============================== */
+
+.features-row-three {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 24px;
+}
+
+
+.visual-card,
+.integration-card,
+.access-card {
+    min-height: 365px;
+
+    border-radius: 10px;
+box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.08);
+
+    padding: 28px;
+
+    box-sizing: border-box;
+}
+
+
+.visual-card {
+    background: #f9a719;
+}
+
+
+.integration-card {
+    background: #fdfdfd;
+}
+
+
+.access-card {
+    background: #fdfdfd;
+}
+
+
+.visual-card h3,
+.integration-card h3,
+.access-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    margin: 0 0 18px;
+}
+
+
+.visual-card p,
+.integration-card p,
+.access-card p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+    color: #555;
+}
+
+
+.visual-card p {
+    color: #111;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+
+    .features-section {
+        padding: 45px 30px;
+    }
+
+    .features-intro {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .features-intro-left,
+    .features-intro-right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .features-row-one {
+        grid-template-columns: 1fr;
+    }
+
+    .intelligence-card {
+        flex-direction: column;
+    }
+
+    .intelligence-content,
+    .intelligence-image {
+        width: 100%;
+    }
+
+    .intelligence-image {
+        height: 280px;
+    }
+
+    .features-row-three {
+        grid-template-columns: 1fr;
+    }
+}
