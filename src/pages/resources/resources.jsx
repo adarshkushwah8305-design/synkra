@@ -1,4 +1,5 @@
 import "./resources.css";
+import { Building2 } from "lucide-react";
 
 import Values from "../../components/values/values.jsx";
 import Team from "../../components/Team/Team.jsx";
@@ -20,8 +21,8 @@ function Resources() {
           <div className="resources-heading">
 
             <div className="resources-badge">
-              <span className="resources-badge-icon">✦</span>
-              ABOUT SYNKRA
+              <Building2 className="resources-badge-icon" />
+              <span>ABOUT SYNKRA</span>
             </div>
 
             <h1>

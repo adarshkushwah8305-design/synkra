@@ -1,34 +1,44 @@
-/* =========================
+/* =========================================
    PLATFORM CTA
-========================= */
+========================================= */
 
 .platfrom-cta-section {
-  width: 1280px;
+  width: 100vw;
   height: 585px;
-  max-width: 100%;
+
+  margin-left: calc(50% - 50vw);
+
   padding: 64px;
+
   box-sizing: border-box;
-  margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   background: #f7f9fa;
+
   overflow: hidden;
 }
+
+
+/* =========================================
+   DARK CTA BOX
+========================================= */
 
 .platfrom-cta-content {
   position: relative;
 
-  width: 100%;
-  max-width: 1000px;
+  width: 1000px;
+  min-width: 1000px;
   height: 457px;
 
   padding: 64px;
+
   box-sizing: border-box;
 
   border-radius: 12px;
+
   overflow: hidden;
 
   background:
@@ -46,9 +56,9 @@
 }
 
 
-/* =========================
-   GLOW
-========================= */
+/* =========================================
+   BLUE GLOW
+========================================= */
 
 .platfrom-cta-content::before {
   content: "";
@@ -58,18 +68,26 @@
   width: 256px;
   height: 256px;
 
-  right: -20px;
-  top: -30px;
+  right: 0;
+  top: 0;
 
-  border-radius: 9999px;
+  border-radius: 50%;
 
   background: #1a56db;
+
   opacity: 0.20;
 
   filter: blur(60px);
 
-  z-index: -1;
+  z-index: 0;
+
+  pointer-events: none;
 }
+
+
+/* =========================================
+   TEAL GLOW
+========================================= */
 
 .platfrom-cta-content::after {
   content: "";
@@ -82,79 +100,153 @@
   left: -56px;
   bottom: -64px;
 
-  border-radius: 9999px;
+  border-radius: 50%;
 
   background: #0d9488;
+
   opacity: 0.15;
 
   filter: blur(60px);
 
-  z-index: -1;
+  z-index: 0;
+
+  pointer-events: none;
 }
 
 
-/* =========================
-   ELLIPSE LINES
-========================= */
+/* =========================================
+   FIGMA ELLIPSE MAIN LAYER
+========================================= */
 
-.platfrom-ellipse {
+.cta-ellipses {
   position: absolute;
 
-  border: 1px solid rgba(190, 190, 190, 0.38);
+  width: 1297.08px;
+  height: 572.72px;
 
-  border-radius: 50%;
+  left: -184.32px;
+  top: -26.44px;
 
   pointer-events: none;
 
   z-index: 1;
 }
 
-.platfrom-ellipse-left-1 {
-  width: 330px;
-  height: 180px;
 
-  left: -130px;
-  top: 155px;
+/* =========================================
+   COMMON ELLIPSE
+========================================= */
 
-  transform: rotate(-32deg);
-}
+.cta-ellipses span {
+  position: absolute;
 
-.platfrom-ellipse-left-2 {
-  width: 300px;
-  height: 170px;
+  display: block;
 
-  left: -105px;
-  top: 220px;
+  box-sizing: border-box;
 
-  transform: rotate(-32deg);
-}
+  border: 0.704512px solid rgba(182, 182, 182, 0.50);
 
-.platfrom-ellipse-right-1 {
-  width: 330px;
-  height: 180px;
+  border-radius: 50%;
 
-  right: -105px;
-  top: -10px;
-
-  transform: rotate(-32deg);
-}
-
-.platfrom-ellipse-right-2 {
-  width: 340px;
-  height: 180px;
-
-  right: -100px;
-  top: 145px;
-
-  transform: rotate(-32deg);
+  transform:
+    matrix(
+      1,
+      -0.01,
+      -0.45,
+      0.89,
+      0,
+      0
+    );
 }
 
 
-/* =========================
-   MAIN CTA
-========================= */
+/* =========================================
+   LEFT — LARGE 1
+========================================= */
+
+.cta-ellipses-left span:nth-child(1) {
+  width: 262.78px;
+  height: 262.78px;
+
+  left: 91px;
+  top: 152px;
+}
+
+
+/* =========================================
+   LEFT — LARGE 2
+========================================= */
+
+.cta-ellipses-left span:nth-child(2) {
+  width: 262.78px;
+  height: 262.78px;
+
+  left: 0;
+  top: 334px;
+}
+
+
+/* =========================================
+   LEFT — SMALL
+========================================= */
+
+.cta-ellipses-left span:nth-child(3) {
+  width: 144.42px;
+  height: 144.42px;
+
+  left: 176.55px;
+  top: 205.72px;
+}
+
+
+/* =========================================
+   RIGHT — LARGE 1
+========================================= */
+
+.cta-ellipses-right span:nth-child(1) {
+  width: 262.78px;
+  height: 262.78px;
+
+  left: 917px;
+  top: 0;
+}
+
+
+/* =========================================
+   RIGHT — LARGE 2
+========================================= */
+
+.cta-ellipses-right span:nth-child(2) {
+  width: 262.78px;
+  height: 262.78px;
+
+  left: 826px;
+  top: 182.17px;
+}
+
+
+/* =========================================
+   RIGHT — SMALL
+========================================= */
+
+.cta-ellipses-right span:nth-child(3) {
+  width: 144.42px;
+  height: 144.42px;
+
+  left: 1002.55px;
+  top: 53.72px;
+}
+
+
+/* =========================================
+   MAIN CTA CONTENT
+========================================= */
 
 .platfrom-cta-main {
+  position: relative;
+
+  z-index: 5;
+
   width: 100%;
 
   display: flex;
@@ -162,10 +254,12 @@
   align-items: center;
 
   gap: 20px;
-
-  position: relative;
-  z-index: 5;
 }
+
+
+/* =========================================
+   HEADING
+========================================= */
 
 .platfrom-cta-main h2 {
   width: 600px;
@@ -176,9 +270,12 @@
   font-family: "Newsreader", Georgia, serif;
 
   font-size: 36px;
+
   font-weight: 500;
 
   line-height: 130%;
+
+  letter-spacing: 0;
 
   text-align: center;
 
@@ -190,9 +287,9 @@
 }
 
 
-/* =========================
+/* =========================================
    BUTTONS
-========================= */
+========================================= */
 
 .platfrom-cta-buttons {
   width: 600px;
@@ -208,6 +305,9 @@
   margin-top: 0;
 }
 
+
+/* PRIMARY */
+
 .platfrom-cta-primary {
   width: 182px;
   height: 56px;
@@ -217,6 +317,7 @@
   box-sizing: border-box;
 
   border: none;
+
   border-radius: 8px;
 
   background: #1a56db;
@@ -226,12 +327,16 @@
   font-family: "DM Sans", Arial, sans-serif;
 
   font-size: 16px;
+
   font-weight: 500;
 
   line-height: 150%;
 
   cursor: pointer;
 }
+
+
+/* SECONDARY */
 
 .platfrom-cta-secondary {
   width: 254px;
@@ -249,6 +354,7 @@
   gap: 8px;
 
   border: 1px solid #e4e3df;
+
   border-radius: 8px;
 
   background: transparent;
@@ -258,6 +364,7 @@
   font-family: "DM Sans", Arial, sans-serif;
 
   font-size: 16px;
+
   font-weight: 500;
 
   line-height: 150%;
@@ -270,9 +377,9 @@
 }
 
 
-/* =========================
+/* =========================================
    NOTE
-========================= */
+========================================= */
 
 .platfrom-cta-note {
   width: 600px;
@@ -283,6 +390,7 @@
   font-family: "DM Sans", Arial, sans-serif;
 
   font-size: 14px;
+
   font-weight: 400;
 
   font-style: italic;
@@ -295,11 +403,15 @@
 }
 
 
-/* =========================
-   BOTTOM TEXT
-========================= */
+/* =========================================
+   BOTTOM AREA
+========================================= */
 
 .platfrom-cta-bottom {
+  position: relative;
+
+  z-index: 5;
+
   width: 100%;
 
   margin-top: auto;
@@ -307,13 +419,14 @@
   display: flex;
 
   align-items: center;
+
   justify-content: space-between;
 
   gap: 16px;
-
-  position: relative;
-  z-index: 5;
 }
+
+
+/* QUOTE */
 
 .platfrom-cta-bottom > p {
   width: 616px;
@@ -323,6 +436,7 @@
   font-family: "DM Sans", Arial, sans-serif;
 
   font-size: 14px;
+
   font-weight: 400;
 
   line-height: 175%;
@@ -331,9 +445,9 @@
 }
 
 
-/* =========================
+/* =========================================
    AUTHOR
-========================= */
+========================================= */
 
 .platfrom-cta-author {
   width: 240px;
@@ -341,6 +455,7 @@
   display: flex;
 
   flex-direction: column;
+
   align-items: center;
 
   text-align: center;
@@ -350,6 +465,7 @@
   font-family: "DM Sans", Arial, sans-serif;
 
   font-size: 14px;
+
   font-weight: 700;
 
   line-height: 150%;
@@ -361,6 +477,7 @@
   font-family: "DM Sans", Arial, sans-serif;
 
   font-size: 12px;
+
   font-weight: 400;
 
   line-height: 175%;
@@ -369,14 +486,29 @@
 }
 
 
-/* =========================
+/* =========================================
    RESPONSIVE
-========================= */
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .platfrom-cta-section {
+    width: 100%;
+    margin-left: 0;
+
+    padding: 40px 24px;
+  }
+
+  .platfrom-cta-content {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 
 @media (max-width: 900px) {
 
   .platfrom-cta-section {
-    width: 100%;
     height: auto;
 
     padding: 40px 20px;
@@ -441,9 +573,4 @@
   .platfrom-cta-main h2 {
     font-size: 26px;
   }
-}
-
-
-.platfrom-ellipse {
-  display: none !important;
 }

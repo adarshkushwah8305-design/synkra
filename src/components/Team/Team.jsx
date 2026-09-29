@@ -3,44 +3,44 @@ import "./Team.css";
 function Team() {
   const members = [
     {
-      name: "Alex Morgan",
-      role: "Co-Founder & CEO",
-      image: "https://i.pravatar.cc/600?img=12",
+      name: "pablo Thompson",
+      role: "Founder & Chief visionary ",
+      image: "pablo.jpg ",
     },
     {
-      name: "Sarah Chen",
+      name: "Elena Thorne",
+      role: "CEO & Co-Founder  ",
+      image: "Elena.jpg",
+    },
+    {
+      name: "Marcus Lee",
+      role: "CTO & Co-founder",
+      image: "Marcus.jpg  ",
+    },
+    {
+      name: "Sofia Patel",
       role: "Head of Product",
-      image: "https://i.pravatar.cc/600?img=47",
+      image: "Sofia.jpg ",
     },
     {
-      name: "Daniel Kim",
-      role: "Lead Engineer",
-      image: "https://i.pravatar.cc/600?img=11",
+      name: "James Kim",
+      role: "Product Lead",
+      image: "James.jpg ",
     },
     {
-      name: "Emily Stone",
-      role: "Product Designer",
-      image: "https://i.pravatar.cc/600?img=44",
+      name: "Oliver Chen",
+      role: "QA Specialist",
+      image: "Oliver.jpg ",
     },
     {
-      name: "Michael Brown",
-      role: "Backend Engineer",
-      image: "https://i.pravatar.cc/600?img=33",
+      name: "Aisha Gomez",
+      role: "Staff Engineer",
+      image: " Aisha.jpg   ",
     },
     {
-      name: "Olivia Smith",
-      role: "Operations Lead",
-      image: "https://i.pravatar.cc/600?img=32",
-    },
-    {
-      name: "James Wilson",
-      role: "Frontend Engineer",
-      image: "https://i.pravatar.cc/600?img=68",
-    },
-    {
-      name: "Sophia Davis",
-      role: "Growth & Marketing",
-      image: "https://i.pravatar.cc/600?img=49",
+      name: "Natalie Brown",
+      role: "Staff Engineerg",
+      image: "Natalie.jpg ",
     },
   ];
 

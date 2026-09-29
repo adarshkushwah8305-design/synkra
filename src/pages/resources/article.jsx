@@ -47,7 +47,7 @@ function Article() {
 
             <img
               className="article-image"
-              src="/blog-building.png"
+              src="/article.png"
               alt="Digital infrastructure"
             />
 
@@ -203,7 +203,8 @@ function Article() {
           {/* TABLE OF CONTENTS */}
           <div className="article-toc">
 
-            <p>TABLE OF CONTENTS</p>
+            <p>IN THIS ARTICLE</p>
+            
 
             <nav>
               <a className="active" href="#intro">

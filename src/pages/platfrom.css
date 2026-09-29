@@ -1,9 +1,9 @@
 .platform-hero {
   width: 100%;
-  min-height: calc(100vh - 82px);
+  min-height: auto;
   height: auto;
 
-  padding: 64px;
+  padding: 20px 64px 54px;
   box-sizing: border-box;
   margin: 0;
 
@@ -49,15 +49,24 @@
 ========================= */
 
 .platform-title {
-  margin: 18px 0 0;
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 18px auto 0;
 
   font-family: "Newsreader", Georgia, serif;
-  font-size: 52px;
+  font-size: 90px;
   font-weight: 500;
   line-height: 1.08;
-  letter-spacing: -1.8px;
+  letter-spacing: -2.5px;
 
   color: #131210;
+  text-align: center;
+}
+
+.platform-title span {
+  color: #1a56db;
+  font-style: italic;
 }
 
 .platform-title span {
@@ -1314,4 +1323,57 @@
 .platfrom-cta-bottom {
   position: relative;
   z-index: 5;
+}
+/* =========================
+   RESOURCES HERO WIDTH
+========================= */
+
+.resources-hero {
+  width: calc(100% - 128px);
+  max-width: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.resources-top {
+  width: 100%;
+}
+
+.resources-image {
+  width: 100%;
+  max-width: none;
+}
+/* ==============================
+   RESOURCES HERO - LESS SIDE GAP
+================================ */
+
+.resources-page .resources-hero {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+
+  box-sizing: border-box;
+}
+
+.resources-page .resources-top {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.resources-page .resources-image {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+/* Move hero text further left */
+.resources-page .resources-top {
+  transform: translateX(-220px);
 }

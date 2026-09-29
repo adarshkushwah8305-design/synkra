@@ -1,343 +1,618 @@
-.more-synkra {
+/* =========================================
+   MORE FROM SYNKRA
+========================================= */
+
+.more-from-cards {
   width: 100%;
-  
-  height: 781px;
-
-  box-sizing: border-box;
-
-  padding: 64px;
-
-  margin: 0 auto;
-
-  background: #f7f9fa;
-
-  font-family: "DM Sans", sans-serif;
-
-  overflow: hidden;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-.more-synkra-header {
-  width: 100%;
+  height: 522px;
 
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
 
-  margin-bottom: 48px;
-}
-
-
-.more-synkra-header h2 {
-  margin: 0;
-
-  font-family: "Newsreader", serif;
-
-  font-size: 32px;
-  font-weight: 500;
-
-  line-height: 130%;
-
-  color: #131210;
-}
-
-
-.more-synkra-header p {
-  margin: 8px 0 0;
-
-  font-size: 13px;
-  line-height: 150%;
-
-  color: #514f4a;
-}
-
-
-/* =========================
-   ARROWS
-========================= */
-
-.more-synkra-arrows {
-  display: flex;
-  align-items: center;
-
-  gap: 18px;
-
-  padding-top: 8px;
-}
-
-
-.more-synkra-arrows button {
-  width: 28px;
-  height: 28px;
-
-  border: none;
-
-  background: transparent;
-
-  color: #514f4a;
-
-  font-size: 18px;
-
-  cursor: pointer;
-}
-
-
-/* =========================
-   HORIZONTAL SCROLL
-========================= */
-
-.more-synkra-track {
-  width: 100%;
-  display: flex;
-  gap: 16px;
+  gap: 24px;
 
   overflow-x: auto;
   overflow-y: hidden;
 
-  scroll-behavior: smooth;
-
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.more-synkra-track::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* Chrome / Edge scrollbar */
-
-.more-synkra-track::-webkit-scrollbar {
-  height: 8px;
-}
-
-
-.more-synkra-track::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-
-.more-synkra-track::-webkit-scrollbar-thumb {
-  background: #c7c7c7;
-
-  border-radius: 10px;
-}
-
-
-.more-synkra-track::-webkit-scrollbar-thumb:hover {
-  background: #999;
-}
-
-
-/* =========================
-   CARD
-========================= */
-
-.more-synkra-card {
-  width: 360px;
-  min-width: 360px;
-
-  height: 500px;
+  padding: 0 0 14px 0;
 
   box-sizing: border-box;
 
-  flex-shrink: 0;
+  scroll-behavior: smooth;
 
-  padding: 20px;
+  scrollbar-width: auto;
+  scrollbar-color: #a09e97 #e4e3df;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.more-from-header {
+  width: 100%;
+  max-width: 1152px;
+  height: 83px;
+
+  margin: 0 0 48px;
+  padding-left: 32px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+}
+
+
+/* =========================================
+   HEADER TEXT
+========================================= */
+
+.more-from-header > div:first-child {
+  width: calc(100% - 280px);
+  height: 83px;
 
   display: flex;
   flex-direction: column;
 
-  background: #fcfcfd;
+  align-items: flex-start;
 
-  border: 1px solid #e4e3df;
-
-  border-radius: 8px;
+  gap: 8px;
 }
 
-
-/* =========================
-   IMAGE
-========================= */
-
-.more-synkra-image {
+.more-from-header h2 {
   width: 100%;
+  height: 47px;
 
-  height: 180px;
-
-  flex-shrink: 0;
-
-  object-fit: cover;
-
-  border-radius: 8px;
-
-  margin-bottom: 14px;
-}
-
-
-/* =========================
-   CATEGORY
-========================= */
-
-.more-synkra-category {
-  display: block;
-
-  margin-bottom: 6px;
-
-  font-size: 10px;
-
-  font-weight: 500;
-
-  line-height: 150%;
-
-  color: #1a56db;
-}
-
-
-/* =========================
-   TITLE
-========================= */
-
-.more-synkra-card h3 {
   margin: 0;
 
-  font-family: "Newsreader", serif;
+  font-family: "Newsreader", Georgia, serif;
 
-  font-size: 20px;
+  font-size: 36px;
+  line-height: 130%;
+  font-weight: 500;
 
-  font-weight: 600;
-
-  line-height: 125%;
+  letter-spacing: 0;
 
   color: #131210;
-}
 
-
-/* =========================
-   DESCRIPTION
-========================= */
-
-.more-synkra-description {
-  margin: 14px 0 0;
-
-  font-size: 12px;
-
-  line-height: 165%;
-
-  color: #78766f;
-
-  flex: 1;
-}
-
-
-/* =========================
-   AUTHOR
-========================= */
-
-.more-synkra-author {
   display: flex;
+  align-items: center;
+}
 
+.more-from-header p {
+  width: 100%;
+  height: 28px;
+
+  margin: 0;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 16px;
+  line-height: 175%;
+  font-weight: 400;
+
+  color: #514f4a;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.more-from-arrows {
+  width: 237px;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
   align-items: center;
 
-  gap: 10px;
-
-  margin-top: 18px;
-}
-
-
-.more-synkra-avatar {
-  width: 32px;
-  height: 32px;
+  gap: 12px;
 
   flex-shrink: 0;
+}
+
+.more-from-arrows button {
+  width: 40px;
+  min-width: 40px;
+
+  height: 40px;
+  min-height: 40px;
+
+  padding: 8px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #131210;
+
+  font-size: 20px;
+  line-height: 1;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 50%;
+  cursor: pointer;
+}
 
-  background: #edf3ff;
+.more-from-arrows button:first-child {
+  color: #a09e97;
+}
+
+.more-from-arrows button:hover {
+  background: #e4e3df;
+}
+
+
+/* =========================================
+   ARTICLES / HORIZONTAL SCROLL
+========================================= */
+
+.more-from-cards {
+  width: calc(100% + 184px);
+  max-width: none;
+
+  height: 522px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-start;
+
+  gap: 24px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 0 0 14px;
+
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: auto;
+  scrollbar-color: #a09e97 #e4e3df;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.more-from-cards::-webkit-scrollbar {
+  width: 0;
+  height: 10px;
+}
+
+.more-from-cards::-webkit-scrollbar-track {
+  background: #e4e3df;
+  border-radius: 10px;
+}
+
+.more-from-cards::-webkit-scrollbar-thumb {
+  background: #a09e97;
+  border-radius: 10px;
+}
+
+.more-from-cards::-webkit-scrollbar-thumb:hover {
+  background: #514f4a;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.more-from-card {
+  box-sizing: border-box;
+
+  width: 368px;
+  min-width: 368px;
+  max-width: 368px;
+
+  height: 522px;
+  min-height: 522px;
+
+  padding: 32px;
+
+  background: #fcfcfd;
+
+  border: 1px solid #e4e3df;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 4px;
+
+  flex: 0 0 368px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.more-from-image {
+  width: 302px;
+  height: 160px;
+
+  margin: 0;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #e9ecef;
+}
+
+.more-from-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   CATEGORY
+========================================= */
+
+.more-from-category {
+  width: 302px;
+  height: 21px;
+
+  margin: 12px 0 0;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 12px;
+  line-height: 175%;
+  font-weight: 400;
 
   color: #1a56db;
 
-  font-size: 9px;
-
-  font-weight: 600;
-}
-
-
-.more-synkra-author-info {
   display: flex;
-
-  flex-direction: column;
+  align-items: center;
 }
 
 
-.more-synkra-author-info strong {
-  font-size: 10px;
+/* =========================================
+   TITLE
+========================================= */
 
-  font-weight: 600;
+.more-from-card h3 {
+  width: 302px;
+  height: 52px;
 
+  margin: 0;
+
+  padding: 0 0 12px;
+
+  box-sizing: border-box;
+
+  font-family: "Newsreader", Georgia, serif;
+
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+
+  letter-spacing: 0;
+
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.more-from-description {
+  width: 302px;
+  height: 125px;
+
+  margin: 0;
+
+  flex-shrink: 0;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 14px;
+  line-height: 175%;
+  font-weight: 400;
+
+  color: #514f4a;
+
+  display: flex;
+  align-items: center;
+
+  text-align: justify;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   AUTHOR
+========================================= */
+
+.more-from-author {
+  width: 302px;
+  height: 58px;
+
+  margin: 0;
+
+  padding: 16px 0 0;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 16px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.more-from-avatar {
+  width: 40px;
+  height: 40px;
+
+  min-width: 40px;
+
+  border-radius: 9999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ebf2fd;
+
+  color: #1a56db;
+
+  font-family: "Public Sans", sans-serif;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   AUTHOR INFO
+========================================= */
+
+.more-from-author-info {
+  width: 161px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 0;
+}
+
+.more-from-author-info strong {
+  width: 161px;
+  height: 21px;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 14px;
   line-height: 150%;
+  font-weight: 700;
 
+  color: #131210;
+
+  display: flex;
+  align-items: center;
+}
+
+.more-from-author-info span {
+  width: 161px;
+  height: 21px;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 12px;
+  line-height: 175%;
+  font-weight: 400;
+
+  color: #78766f;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   AVATAR COLORS
+========================================= */
+
+.more-from-card:nth-child(2) .more-from-avatar {
+  background: #e4e3df;
   color: #131210;
 }
 
-
-.more-synkra-author-info span {
-  margin-top: 2px;
-
-  font-size: 8px;
-
-  line-height: 150%;
-
-  color: #78766f;
+.more-from-card:nth-child(n + 3) .more-from-avatar {
+  background: #0f766e;
+  color: #ccfbf1;
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =========================================
+   TABLET
+========================================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
 
-  .more-synkra {
+  .more-from-synkra {
+    max-width: 100%;
+  }
+
+  .more-from-header {
+    width: 100%;
+  }
+
+  .more-from-cards {
+    width: calc(100% + 100px);
+    max-width: none;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .more-from-synkra {
     height: auto;
 
     padding: 48px 32px;
   }
 
-  .more-synkra-track {
-    overflow-x: auto;
+  .more-from-header {
+    height: auto;
+
+    margin-bottom: 32px;
   }
 
+  .more-from-header > div:first-child {
+    width: 100%;
+    height: auto;
+  }
+
+  .more-from-header h2 {
+    height: auto;
+
+    font-size: 32px;
+  }
+
+  .more-from-header p {
+    height: auto;
+
+    font-size: 14px;
+  }
+
+  .more-from-arrows {
+    width: auto;
+  }
+
+  .more-from-cards {
+    width: calc(100% + 32px);
+
+    height: 522px;
+
+    gap: 20px;
+  }
 }
 
 
-@media (max-width: 600px) {
+/* =========================================
+   MOBILE
+========================================= */
 
-  .more-synkra {
+@media (max-width: 650px) {
+
+  .more-from-synkra {
     padding: 40px 20px;
   }
 
-  .more-synkra-header h2 {
-    font-size: 28px;
+  .more-from-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
   }
 
-  .more-synkra-card {
-    width: 300px;
-    min-width: 300px;
-
-    height: 470px;
+  .more-from-header > div:first-child {
+    width: 100%;
   }
 
-  .more-synkra-image {
-    height: 160px;
+  .more-from-header h2 {
+    font-size: 30px;
   }
 
+  .more-from-header p {
+    font-size: 13px;
+  }
+
+  .more-from-arrows {
+    width: 100%;
+
+    justify-content: flex-start;
+  }
+
+  .more-from-cards {
+    width: calc(100% + 20px);
+
+    height: 522px;
+
+    gap: 16px;
+  }
+
+  .more-from-card {
+    width: 368px;
+    min-width: 368px;
+    max-width: 368px;
+
+    height: 522px;
+
+    flex: 0 0 368px;
+  }
+}
+.more-from-card:first-child {
+  margin-left: 24px;
+}
+/* Hide horizontal scrollbar but keep scrolling working */
+
+.more-from-cards {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* Internet Explorer / Edge */
+}
+
+.more-from-cards::-webkit-scrollbar {
+  display: none;                /* Chrome / Edge / Safari */
 }

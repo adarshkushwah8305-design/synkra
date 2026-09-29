@@ -4,18 +4,15 @@
 
 .cta-section {
   width: 100%;
-  height: 417px;
+  min-height: 417px;
 
   padding: 64px;
 
   box-sizing: border-box;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  gap: 8px;
 
   background: #ffffff;
 }
@@ -30,7 +27,6 @@
 
   width: 1152px;
   height: 289px;
-
   max-width: 100%;
 
   padding: 64px;
@@ -38,11 +34,10 @@
   box-sizing: border-box;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
   overflow: hidden;
-
   isolation: isolate;
 
   background:
@@ -65,16 +60,11 @@
 
   z-index: 10;
 
-  width: 1024px;
-  max-width: 100%;
-
-  height: 161px;
-
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
 
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 
@@ -88,13 +78,12 @@
 
 .newsletter-label {
   width: 100%;
-  height: 21px;
 
   margin: 0;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   font-family: "DM Sans", Arial, sans-serif;
 
@@ -114,13 +103,12 @@
 
 .newsletter-content h3 {
   width: 100%;
-  height: 31px;
 
   margin: 0;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   font-family: "Newsreader", Georgia, serif;
 
@@ -141,13 +129,11 @@
 .newsletter-description {
   width: 100%;
 
-  height: 21px;
-
   margin: 12px 0 0;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   font-family: "DM Sans", Arial, sans-serif;
 
@@ -166,33 +152,46 @@
 ========================= */
 
 .newsletter-form {
-  width: 480px;
-  max-width: 100%;
+  width: 520px !important;
+  max-width: 100% !important;
 
-  height: 64px;
+  margin: 16px auto 0;
 
-  padding-top: 20px;
+  padding: 0 !important;
 
   box-sizing: border-box;
 
-  display: flex;
-  flex-direction: row;
+  display: grid !important;
 
-  align-items: center;
+ grid-template-columns: 2fr 1fr !important;
 
-  gap: 12px;
+  grid-template-rows: 44px !important;
+
+  gap: 12px !important;
+
+  align-items: stretch;
+
+  justify-content: center;
+
+  flex-direction: unset !important;
+
+  flex-wrap: nowrap !important;
 }
 
 
 /* =========================
-   INPUT
+   EMAIL INPUT
 ========================= */
 
 .newsletter-form input {
-  width: 340px;
-  height: 39px;
+  width: 100% !important;
+  min-width: 0 !important;
+
+  height: 44px !important;
 
   padding: 8px 12px;
+
+  margin: 0 !important;
 
   box-sizing: border-box;
 
@@ -229,13 +228,15 @@
 ========================= */
 
 .newsletter-form button {
-  width: 128px;
-  min-width: 128px;
+  width: 100% !important;
+  min-width: 0 !important;
 
-  height: 44px;
-  min-height: 44px;
+  height: 44px !important;
+  min-height: 44px !important;
 
   padding: 8px 20px;
+
+  margin: 0 !important;
 
   box-sizing: border-box;
 
@@ -257,6 +258,8 @@
 
   cursor: pointer;
 
+  white-space: nowrap;
+
   transition: 0.2s ease;
 }
 
@@ -267,7 +270,7 @@
 
 
 /* =========================
-   DECORATIVE ELLIPSES
+   DECORATIVE CIRCLES
 ========================= */
 
 .circle {
@@ -297,7 +300,9 @@
 }
 
 
-/* RIGHT SIDE */
+/* =========================
+   RIGHT SIDE
+========================= */
 
 .circle-1 {
   width: 263px;
@@ -326,7 +331,9 @@
 }
 
 
-/* LEFT SIDE */
+/* =========================
+   LEFT SIDE
+========================= */
 
 .circle-4 {
   width: 263px;
@@ -424,21 +431,24 @@
   .newsletter-card {
     width: 100%;
   }
-
 }
 
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 700px) {
 
   .cta-section {
-    height: auto;
     min-height: 417px;
 
     padding: 30px 20px;
   }
 
   .newsletter-card {
-    height: 289px;
+    height: auto;
+    min-height: 289px;
 
     padding: 40px 20px;
   }
@@ -456,38 +466,53 @@
   }
 
   .newsletter-form {
-    width: 100%;
-  }
+    width: 100% !important;
 
-  .newsletter-form input {
-    width: 100%;
-  }
+    display: grid !important;
 
-  .newsletter-form button {
-    width: 110px;
-    min-width: 110px;
-  }
+    grid-template-columns: 1fr 1fr !important;
 
-}
+    grid-template-rows: 44px !important;
 
+    gap: 10px !important;
 
-@media (max-width: 480px) {
+    flex-direction: unset !important;
 
-  .newsletter-card {
-    height: 320px;
-  }
-
-  .newsletter-form {
-    height: auto;
-
-    flex-direction: column;
-
-    padding-top: 15px;
+    flex-wrap: nowrap !important;
   }
 
   .newsletter-form input,
   .newsletter-form button {
-    width: 100%;
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    height: 44px !important;
+  }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+  .newsletter-card {
+    padding: 35px 15px;
   }
 
+  .newsletter-form {
+    gap: 8px !important;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    height: 42px !important;
+  }
+
+  .newsletter-form button {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
 }

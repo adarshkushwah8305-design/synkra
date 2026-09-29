@@ -797,3 +797,42 @@
     width: 100%;
   }
 }
+/* IN THIS ARTICLE - BLUE DOT */
+
+.article-toc nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-toc nav a {
+  position: relative;
+  display: block;
+  padding-left: 16px;
+
+  color: #514f4a;
+  text-decoration: none;
+
+  font-size: 14px;
+  line-height: 175%;
+}
+
+.article-toc nav a.active {
+  color: #1a56db;
+  font-weight: 600;
+}
+
+.article-toc nav a.active::before {
+  content: "";
+
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  left: 0;
+  top: 8px;
+
+  background: #1a56db;
+  border-radius: 50%;
+}

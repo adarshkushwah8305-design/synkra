@@ -3,125 +3,160 @@ import "./moreFromSynkra.css";
 function MoreFromSynkra() {
   const articles = [
     {
-      image: "/blog-building.png",
+      image: "/editorial.png",
       category: "OPS STRATEGY",
       title: "The 5 workflows every SaaS team should automate first.",
       description:
         "The real gains aren't in the flashy overhauls, but in targeting those repetitive tasks that drain your team's time. Here's a proven automation sequence to get started.",
       name: "Elena Marsh",
-      date: "March 28, 2026",
+      date: "12 min read • March 28, 2026",
       avatar: "EM",
     },
 
     {
-      image: "/blog-building.png",
+      image: "/platfrom-logic-image.png",
       category: "PRODUCT UPDATES",
       title: "Synkra AI v2: Event-based triggers & 3x faster runs.",
       description:
         "Synkra AI v2 is here, and it's a game-changer. We've completely overhauled our trigger engine based on your feedback.",
       name: "Dev Team",
-      date: "March 28, 2026",
+      date: "12 min read • March 28, 2026",
       avatar: "DT",
     },
 
     {
-      image: "/blog-building.png",
+      image: "/editorial-card.png",
       category: "SCALABILITY",
       title: "Zapier vs Make vs Synkra: The honest breakdown.",
       description:
-        "We surveyed 40 teams who migrated from other platforms to understand their reasons for switching to Synkra.",
+        "We surveyed teams who migrated from other platforms to understand their reasons for switching to Synkra.",
       name: "Sam Okafor",
-      date: "April 5, 2026",
+      date: "10 min read • April 5, 2026",
       avatar: "SO",
     },
 
     {
-      image: "/blog-building.png",
-      category: "ENGINEERING",
-      title: "Building reliable automation systems.",
+      image: "/editorial-card.png",
+      category: "CULTURE",
+      title: "Why PMs should own the ops, not just the roadmap.",
       description:
-        "How modern SaaS teams create reliable workflows without adding unnecessary complexity.",
-      name: "Synkra Team",
-      date: "April 10, 2026",
-      avatar: "ST",
+        "Product Managers embracing operational ownership can create stronger collaboration between product and engineering teams.",
+      name: "Sam Okafor",
+      date: "10 min read • April 5, 2026",
+      avatar: "SO",
     },
 
     {
-      image: "/blog-building.png",
-      category: "PRODUCT",
-      title: "How teams build better operational workflows.",
+      image: "/editorial-large.png",
+      category: "ENGINEERING",
+      title: "Building systems that scale with your team.",
       description:
-        "A practical look at creating workflows that stay simple, scalable and easy to manage.",
-      name: "Alex Morgan",
-      date: "April 14, 2026",
-      avatar: "AM",
+        "Modern SaaS teams need operational systems that grow alongside their products without adding unnecessary complexity.",
+      name: "Dev Team",
+      date: "8 min read • April 10, 2026",
+      avatar: "DT",
     },
   ];
 
   return (
-    <section className="more-synkra">
+    <section className="more-from-synkra">
 
       {/* HEADER */}
-      <div className="more-synkra-header">
+      <div className="more-from-header">
 
         <div>
           <h2>More from Synkra</h2>
 
           <p>
-            Experts in automation, dedicated to helping your business thrive.
+            More ideas, insights and stories from the Synkra team.
           </p>
         </div>
 
-        <div className="more-synkra-arrows">
-          <button type="button">←</button>
-          <button type="button">→</button>
+        {/* ARROWS */}
+        <div className="more-from-arrows">
+          <button
+            type="button"
+            onClick={() => {
+              document
+                .querySelector(".more-from-cards")
+                ?.scrollBy({
+                  left: -392,
+                  behavior: "smooth",
+                });
+            }}
+          >
+            ←
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              document
+                .querySelector(".more-from-cards")
+                ?.scrollBy({
+                  left: 392,
+                  behavior: "smooth",
+                });
+            }}
+          >
+            →
+          </button>
         </div>
 
       </div>
 
 
-      {/* HORIZONTAL SCROLL AREA */}
-      <div className="more-synkra-track">
+      {/* CARDS */}
+      <div className="more-from-cards">
 
         {articles.map((article, index) => (
-
           <article
-            className="more-synkra-card"
+            className="more-from-card"
             key={index}
           >
 
-            <img
-              src={article.image}
-              alt={article.title}
-              className="more-synkra-image"
-            />
+            {/* IMAGE */}
+            <div className="more-from-image">
+              <img
+                src={article.image}
+                alt={article.title}
+              />
+            </div>
 
-            <span className="more-synkra-category">
+
+            {/* CATEGORY */}
+            <div className="more-from-category">
               {article.category}
-            </span>
+            </div>
 
+
+            {/* TITLE */}
             <h3>
               {article.title}
             </h3>
 
-            <p className="more-synkra-description">
+
+            {/* DESCRIPTION */}
+            <p className="more-from-description">
               {article.description}
             </p>
 
-            <div className="more-synkra-author">
 
-              <div className="more-synkra-avatar">
+            {/* AUTHOR */}
+            <div className="more-from-author">
+
+              <div className="more-from-avatar">
                 {article.avatar}
               </div>
 
-              <div className="more-synkra-author-info">
+              <div className="more-from-author-info">
 
                 <strong>
                   {article.name}
                 </strong>
 
                 <span>
-                  12 min read · {article.date}
+                  {article.date}
                 </span>
 
               </div>
@@ -129,7 +164,6 @@ function MoreFromSynkra() {
             </div>
 
           </article>
-
         ))}
 
       </div>

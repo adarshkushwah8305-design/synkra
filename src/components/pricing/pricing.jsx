@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./pricing.css";
 import FAQ from "../FAQ/FAQ.jsx";
-import CTA from "../CTA/CTA.jsx";
+import PlatformCTA from "../PlatformCTA/PlatformCTA.jsx";
 import Footer from "../Footer/Footer.jsx";
 
 function Pricing() {
@@ -18,7 +18,7 @@ function Pricing() {
           {/* PRICING BUTTON */}
           <div className="pricing-label">
             <span className="pricing-label-dot"></span>
-            PRICING
+           SYNKRA PRICING
           </div>
 
           <h1>
@@ -156,7 +156,7 @@ function Pricing() {
 
       {/* FAQ PRICING BOX KE NICHE */}
       <FAQ />
-      <CTA />   
+      <PlatformCTA/>  
     <Footer />  
     </>
   );

@@ -135,7 +135,7 @@ function Blog() {
 
     <div className="editorial-image">
       <img
-        src="/blog-building.png"
+        src="/editorial.png"
         alt="Product Design"
       />
     </div>
@@ -157,9 +157,11 @@ function Blog() {
 
     <div className="editorial-author">
 
-      <div className="author-avatar author-gray">
-        MC
-      </div>
+      <img
+  src="/marcus.jpg"
+  alt="Marcus Chen"
+  className="author-avatar"
+/>
 
       <div className="author-details">
         <strong>Marcus Chen</strong>
@@ -203,9 +205,11 @@ function Blog() {
 
     <div className="editorial-author">
 
-      <div className="author-avatar author-teal">
-        PT
-      </div>
+      <img
+  src="/pablo.jpg"
+  alt="Pablo Thompson"
+  className="author-avatar"
+/>
 
       <div className="author-details">
         <strong>Pablo Thompson</strong>
@@ -248,9 +252,11 @@ function Blog() {
 
     <div className="editorial-author">
 
-      <div className="author-avatar author-teal">
-        PT
-      </div>
+      <img
+  src="/pablo.jpg"
+  alt="Pablo Thompson"
+  className="author-avatar"
+/>
 
       <div className="author-details">
         <strong>Pablo Thompson</strong>

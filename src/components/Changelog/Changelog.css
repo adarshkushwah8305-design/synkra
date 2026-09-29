@@ -3,27 +3,31 @@
 ========================================= */
 
 .changelog {
-  width: 1280px;
-  height: 1765px;
+  width: 100vw;
+  min-height: 1765px;
 
-  padding: 64px;
+  /* parent ke center se bahar nikal kar full screen */
+  margin-left: calc(50% - 50vw);
+
+  padding: 32px;
+
   box-sizing: border-box;
 
   background: #f7f9fa;
   color: #131210;
 
   font-family: "DM Sans", sans-serif;
-
-  margin: 0 auto;
 }
 
 .changelog-container {
-  width: 100px;
- max-width: 1280px;
+  width: 1152px;
+  max-width: 100%;
 
-  height: 1637px;
+  min-height: 1637px;
 
+  margin: 0 auto;
   padding-top: 16px;
+
   box-sizing: border-box;
 }
 
@@ -33,14 +37,17 @@
 ========================================= */
 
 .changelog-header {
-  width: 1152px;
+  width: 100%;
+  max-width: 1152px;
   height: 225px;
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
   gap: 40px;
+
+  margin: 0 auto;
 }
 
 
@@ -131,7 +138,8 @@
 .changelog-timeline {
   position: relative;
 
-  width: 1152px;
+  width: 100%;
+  max-width: 1152px;
   height: 1396px;
 
   padding: 64px 0;
@@ -143,6 +151,8 @@
   align-items: center;
 
   gap: 48px;
+
+  margin: 0 auto;
 }
 
 
@@ -453,7 +463,7 @@
    RESPONSIVE
 ========================================= */
 
-@media (max-width: 1300px) {
+@media  (max-width: 900px)  {
 
   .changelog {
     width: 100%;

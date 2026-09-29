@@ -1,9 +1,27 @@
+import "./PlatformCTA.css";
+
 function PlatformCTA() {
   return (
     <section className="platfrom-cta-section">
 
+      {/* CTA CONTENT */}
       <div className="platfrom-cta-content">
 
+        {/* LEFT ELLIPSES */}
+        <div className="cta-ellipses cta-ellipses-left">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* RIGHT ELLIPSES */}
+        <div className="cta-ellipses cta-ellipses-right">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* CTA MAIN */}
         <div className="platfrom-cta-main">
 
           <h2>
@@ -31,6 +49,7 @@ function PlatformCTA() {
 
         </div>
 
+        {/* CTA BOTTOM */}
         <div className="platfrom-cta-bottom">
 
           <p>

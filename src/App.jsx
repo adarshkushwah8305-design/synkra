@@ -22,8 +22,8 @@ function Home() {
     
       <Stats />
       <Testimonials />
-      <FAQ />
-      <CTA />
+    
+    
       <FAQ />
       <CTA />
       <Footer />
